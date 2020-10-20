@@ -1,0 +1,77 @@
+nav {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  background-color: rgb(117, 117, 117);
+  color: wheat;
+  height: 8vh;
+  letter-spacing: 3px;
+}
+
+
+.list {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  width: 35%;
+}
+nav ul li {
+  list-style: none;
+}
+nav ul li a {
+  list-style: none;
+  color: wheat;
+  text-decoration: none;
+}
+.burger>div{
+    margin: 5px;
+    height: 3px;
+    width: 25px;
+    background-color: white;
+    
+}
+.burger{
+    display: none;
+}
+.black{
+  background-color: black;
+}
+.yellow{
+  background-color: yellowgreen;
+}
+
+@media (max-width: 768px) {
+   .translateAway {
+    position: fixed;
+    top: 8vh;
+    right: 0;
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+     height: 92vh;
+    background-color: darkslateblue;
+    transform: translateX(100%); 
+    transition:  0.5s ease-in;
+  }
+  
+  .translateBack {
+    position: fixed;
+    top: 8vh;
+    right: 0;
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+     height: 92vh;
+    background-color: darkslateblue;
+    transform: translateX(0%); 
+    transition:  .5s ease-in;
+  }
+
+  .burger{
+      display: block;
+  }
+}
